@@ -35,6 +35,7 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
+    'art3D.apps.Art3DConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,7 +79,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 # STATIC_URL = '/static/'
-# STATIC_ROOT = 'staticfiles/'
+STATIC_ROOT = 'staticfiles/'
 # # os.path.join(BASE_DIR, "static")
 # MEDIA_URL = "/media/"
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('portfolio.urls')),
+    path('', include(('portfolio.urls','portfolio'),namespace='portfolio')),
+    path('', include(('art3D.urls','art3D'),namespace='art3D')),
 ]
