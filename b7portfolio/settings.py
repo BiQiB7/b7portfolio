@@ -36,6 +36,7 @@ if RENDER_EXTERNAL_HOSTNAME:
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
     'art3D.apps.Art3DConfig',
+    'mythical_creature.apps.MythicalCreatureConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
