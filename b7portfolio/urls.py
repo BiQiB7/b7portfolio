@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include(('portfolio.urls','portfolio'),namespace='portfolio')),
     path('', include(('art3D.urls','art3D'),namespace='art3D')),
     path('', include(('mythical_creature.urls','mythical_creature'),namespace='mythical_creature')),
+    path('', include(('about.urls','about'),namespace='about')),
 ]

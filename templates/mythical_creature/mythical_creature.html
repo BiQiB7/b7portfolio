@@ -8,8 +8,7 @@
     <title></title>
     <meta name="description" content="#">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="..\static\portfolio\style.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid d-flex justify-content-center">
             <a class="navbar-brand" href="{% url 'portfolio:portfolio' %}">Portfolio</a>
             <div style="margin: 0 20px;"></div>
@@ -30,14 +29,14 @@
             <div style="margin: 0 20px;"></div>
             <a class="navbar-brand" href="https://github.com/BiQiB7">Code</a>
             <div style="margin: 0 20px;"></div>
-            <a class="navbar-brand" href="#">About Me</a>
+            <a class="navbar-brand" href="{% url 'about:about' %}">About Me</a>
         </div>
     </nav>
 
-    <div style="margin-right: 10%; margin-left: 10%; margin-top: 5%;">
+    <div style="margin-right: 10%; margin-left: 10%; margin-top: 20px;">
         <div class="row justify-content-center text-center">
             <h3 style>Mythical Creatures</h3>
-            <p class="card-text" style="width: 1000px;">A simplified liquid / fluid container shader, made in stingray
+            <p class="card-text" style="width: 1000px; margin-bottom: 40px;">A simplified liquid / fluid container shader, made in stingray
                 engine and its shader graph. Including a dirty glass shader. Due to limitations this is made entirely in
                 shaders Im not using a custom clipping plane, nor any rigs with jiggle constraints. Below you can see
                 the
@@ -51,40 +50,43 @@
         </div>
         <div class="row justify-content-center" style="margin-top: 20px;">
             <div class="row justify-content-center" style="margin-top: 20px;">
-              <div class="col-md-4">
-        
-                <div class="card mb-3">
-                  <a href="{% url 'mythical_creature:mythical_creature' %}" class="card-link"></a>
-        
-                  <div class="card mb-3 img-container">
-                    <a href="{% url 'mythical_creature:mythical_creature' %}" class="card-link">
-                      <img src="{% static 'art3D\dragon.jpg' %}" class="card-img-top" alt="My image">
-                    </a>
-        
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer .</p>
-                  </div>
+                <div class="col-md-4">
+
+                    <div class="card mb-3">
+                        <a href="{% url 'mythical_creature:mythical_creature' %}" class="card-link"></a>
+
+                        <div class="card mb-3 img-container">
+                            <a href="{% url 'mythical_creature:mythical_creature' %}" class="card-link">
+                                <img src="{% static 'art3D\dragon.jpg' %}" class="card-img-top" alt="My image">
+                            </a>
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer .</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-3">
-                  <div class="card mb-3 img-container">
-                    <img src="{% static 'art3D\chinese_architecture.jpg' %}" class="card-img-top" alt="My image">
-        
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer .</p>
-                  </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card mb-3 img-container">
+                            <img src="{% static 'art3D\chinese_architecture.jpg' %}" class="card-img-top"
+                                alt="My image">
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer .</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        
+        </div>
+
     </div>
 
 
